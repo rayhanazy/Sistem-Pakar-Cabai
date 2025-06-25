@@ -16,8 +16,8 @@ $user = $result->fetch_assoc();
 if ($user && password_verify($password, $user['password'])) {
   $_SESSION['login'] = true;
   $_SESSION['username'] = $username;
-  header("Location: dashboard.php");
+  header("Location: index.html");
   exit();
 } else {
-  echo "<script>alert('Username atau password salah'); window.location.href='login.php';</script>";
+  echo "<script>alert('Username atau password salah'); window.location.href='index.php';</script>";
 }

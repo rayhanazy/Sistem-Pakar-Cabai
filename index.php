@@ -26,7 +26,7 @@
 <body>
   <div class="login-box">
     <h4 class="text-center">Login Page</h4>
-    <form action="proses_login.php" method="POST">
+    <form action="proses_index.php" method="POST">
       <div class="mb-3">
         <label>Username</label>
         <input type="text" name="username" class="form-control" required>

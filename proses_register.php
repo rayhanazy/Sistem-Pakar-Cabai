@@ -25,6 +25,6 @@ if ($cek->num_rows > 0) {
   $stmt->bind_param("ss", $username, $hash);
   $stmt->execute();
 
-  echo "<script>alert('Registrasi berhasil. Silakan login.'); window.location='login.php';</script>";
+  echo "<script>alert('Registrasi berhasil. Silakan login.'); window.location='index.php';</script>";
 }
 ?>

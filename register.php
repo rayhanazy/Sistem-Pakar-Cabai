@@ -37,7 +37,7 @@
       </div>
       <div class="d-grid gap-2">
         <button type="submit" class="btn btn-success">Daftar</button>
-        <a href="login.php" class="btn btn-secondary">Kembali ke Login</a>
+        <a href="index.php" class="btn btn-secondary">Kembali ke Login</a>
       </div>
     </form>
   </div>
