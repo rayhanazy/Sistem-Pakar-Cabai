@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda Sistem Pakar Cabai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f9fc;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card-custom {
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: 0.2s ease;
+    }
+    .card-custom:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background-color: #f1f9ff;
+    }
+    .icon-circle {
+      font-size: 1.5rem;
+      color: #2c7be5;
+      background-color: #e8f0fe;
+      border-radius: 50%;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    .title {
+      font-weight: 600;
+      margin: 0;
+    }
+    .desc {
+      font-size: 0.875rem;
+      color: #6c757d;
+    }
+    .section-title {
+      font-weight: 600;
+      margin: 25px 0 10px;
+      font-size: 1.1rem;
+      color: #343a40;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sistem Pakar Cabai</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container my-4">
+    <h4 class="section-title">Layanan Publik</h4>
+
+    <a href="sistem.php" class="card-link">
+      <div class="card-custom">
+        <div class="d-flex align-items-center">
+          <div class="icon-circle"><i class="bi bi-shield-check"></i></div>
+          <div>
+            <p class="title mb-0">Diagnosis Penyakit Layu Fusarium</p>
+            <p class="desc mb-0">Lakukan diagnosa penyakit berdasarkan gejala.</p>
+          </div>
+        </div>
+        <i class="bi bi-chevron-right"></i>
+      </div>
+    </a>
+
+    <a href="penyakit.php" class="card-link">
+      <div class="card-custom">
+        <div class="d-flex align-items-center">
+          <div class="icon-circle"><i class="bi bi-virus"></i></div>
+          <div>
+            <p class="title mb-0">Penyakit</p>
+            <p class="desc mb-0">Informasi penyakit pada tanaman cabai.</p>
+          </div>
+        </div>
+        <i class="bi bi-chevron-right"></i>
+      </div>
+    </a>
+
+    <a href="gejala.php" class="card-link">
+      <div class="card-custom">
+        <div class="d-flex align-items-center">
+          <div class="icon-circle"><i class="bi bi-eye"></i></div>
+          <div>
+            <p class="title mb-0">Gejala</p>
+            <p class="desc mb-0">Kenali gejala yang muncul pada tanaman.</p>
+          </div>
+        </div>
+        <i class="bi bi-chevron-right"></i>
+      </div>
+    </a>
+
+    <a href="basis_pengetahuan.php" class="card-link">
+      <div class="card-custom">
+        <div class="d-flex align-items-center">
+          <div class="icon-circle"><i class="bi bi-book"></i></div>
+          <div>
+            <p class="title mb-0">Basis Pengetahuan</p>
+            <p class="desc mb-0">Lihat aturan pakar dan pengetahuan sistem.</p>
+          </div>
+        </div>
+        <i class="bi bi-chevron-right"></i>
+      </div>
+    </a>
+
+    <h4 class="section-title mt-4">Layanan Hotline</h4>
+
+    <a href="hotline_admin.php" class="card-link">
+      <div class="card-custom">
+        <div class="d-flex align-items-center">
+          <div class="icon-circle"><i class="bi bi-headset"></i></div>
+          <div>
+            <p class="title mb-0">Hotline Admin</p>
+            <p class="desc mb-0">Sampaikan pertanyaan atau kendala layanan.</p>
+          </div>
+        </div>
+        <i class="bi bi-chevron-right"></i>
+      </div>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Modal Konfirmasi Logout -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="logoutModalLabel">Konfirmasi Logout</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Apakah Anda yakin ingin keluar dari sistem?</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+        <a href="logout.php" class="btn btn-danger">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

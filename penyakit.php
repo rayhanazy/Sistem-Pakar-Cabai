@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Informasi Penyakit - Layu Fusarium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .content-box {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2c7be5;
+      font-weight: bold;
+    }
+    .back-link {
+      text-decoration: none;
+      color: #2c7be5;
+      font-size: 25px;
+      margin-right: 30px;
+    }
+    .img-fluid {
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sistem Pakar Cabai</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="content-box">
+      <h2><a href="index.html" class="back-link mb-3 d-inline-block"><i class="bi bi-arrow-left-circle"></i></a>Layu Fusarium</h2>
+      <img src="assets/fusarium.jpg" alt="Layu Fusarium" class="img-fluid w-100">
+
+      <p><strong>Deskripsi:</strong><br>
+        Layu Fusarium adalah penyakit yang disebabkan oleh jamur <em>Fusarium oxysporum</em>. Jamur ini menyerang sistem pembuluh tanaman cabai dan menyebabkan tanaman layu secara bertahap, biasanya dimulai dari daun bagian bawah.
+      </p>
+
+      <p><strong>Gejala Umum:</strong></p>
+      <ul>
+        <li>Daun menguning dari bawah ke atas</li>
+        <li>Tanaman layu pada siang hari dan segar kembali pada sore/malam hari</li>
+        <li>Batang bagian bawah menghitam</li>
+        <li>Akar membusuk atau terlihat rusak</li>
+        <li>Daun rontok secara tiba-tiba</li>
+        <li>Tanaman akhirnya mati perlahan</li>
+      </ul>
+
+      <p><strong>Penyebab:</strong><br>
+        Penyakit ini disebabkan oleh jamur patogen yang hidup di tanah. Infeksi biasanya terjadi melalui akar tanaman yang terluka.
+      </p>
+
+      <p><strong>Pencegahan dan Pengendalian:</strong></p>
+      <ul>
+        <li>Gunakan bibit yang tahan penyakit</li>
+        <li>Hindari penanaman di tanah yang sebelumnya sudah terinfeksi</li>
+        <li>Perbaiki sistem drainase lahan</li>
+        <li>Lakukan rotasi tanaman secara berkala</li>
+        <li>Gunakan fungisida sistemik jika diperlukan</li>
+      </ul>
+
+      <p><strong>Dampak:</strong><br>
+        Layu Fusarium dapat menyebabkan kerugian hasil panen hingga lebih dari 50% jika tidak ditangani dengan baik.
+      </p>
+    </div>
+  </div>
+
+<!-- Modal Konfirmasi Logout -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="logoutModalLabel">Konfirmasi Logout</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Apakah Anda yakin ingin keluar dari sistem?</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+        <a href="logout.php" class="btn btn-danger">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
