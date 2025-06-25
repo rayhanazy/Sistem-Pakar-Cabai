@@ -57,7 +57,7 @@
   <div class="container">
     <div class="content-box">
       <h2><a href="dashboard.html" class="back-link mb-3 d-inline-block"><i class="bi bi-arrow-left-circle"></i></a>Layu Fusarium</h2>
-      <img src="assets/fusarium.jpg" alt="Layu Fusarium" class="img-fluid w-100">
+      <img src="assets/fusarium.jpg" alt="Layu Fusarium" class="img-fluid w-50">
 
       <p><strong>Deskripsi:</strong><br>
         Layu Fusarium adalah penyakit yang disebabkan oleh jamur <em>Fusarium oxysporum</em>. Jamur ini menyerang sistem pembuluh tanaman cabai dan menyebabkan tanaman layu secara bertahap, biasanya dimulai dari daun bagian bawah.
