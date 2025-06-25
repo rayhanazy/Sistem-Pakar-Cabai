@@ -55,7 +55,7 @@ if (!isset($_SESSION['login'])) {
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="dashboard.html">Sistem Pakar Cabai</a>
+      <a class="navbar-brand" href="dashboard.php">Sistem Pakar Cabai</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -70,7 +70,7 @@ if (!isset($_SESSION['login'])) {
   </nav>
 
   <div class="chat-box">
-    <h4 class="text-left mb-3"><a href="dashboard.html" class="back-link mb-3 d-inline-block"><i class="bi bi-arrow-left-circle"></i></a>Diagnosa Layu Fusarium</h4>
+    <h4 class="text-left mb-3"><a href="dashboard.php" class="back-link mb-3 d-inline-block"><i class="bi bi-arrow-left-circle"></i></a>Diagnosa Layu Fusarium</h4>
     <div class="chat-log d-flex flex-column" id="chatLog"></div>
     <div class="btn-group w-100" role="group" id="btnGroup">
       <button class="btn btn-success" onclick="submitPilihan('Ya')">Ya</button>

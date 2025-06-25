@@ -43,7 +43,7 @@
 <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="dashboard.html">Sistem Pakar Cabai</a>
+      <a class="navbar-brand" href="dashboard.php">Sistem Pakar Cabai</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -60,7 +60,7 @@
   <div class="container">
     <div class="content-box">
 
-      <h2 class="mb-4"><a href="dashboard.html" class="back-link mb-3 d-inline-block"><i class="bi bi-arrow-left-circle"></i></a>Gejala-Gejala Layu Fusarium</h2>
+      <h2 class="mb-4"><a href="dashboard.php" class="back-link mb-3 d-inline-block"><i class="bi bi-arrow-left-circle"></i></a>Gejala-Gejala Layu Fusarium</h2>
 
       <p>
         Gejala-gejala penyakit <strong>Layu Fusarium</strong> pada tanaman cabai biasanya muncul secara bertahap dan terkadang menyerupai kekurangan air atau hama lain. Penyakit ini menyerang pembuluh xilem tanaman sehingga menghambat aliran air dan nutrisi dari akar ke seluruh bagian tanaman.
