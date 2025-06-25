@@ -40,7 +40,7 @@
 <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Sistem Pakar Cabai</a>
+      <a class="navbar-brand" href="dashboard.html">Sistem Pakar Cabai</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,7 +56,7 @@
 
   <div class="container">
     <div class="content-box">
-      <h2><a href="index.html" class="back-link mb-3 d-inline-block"><i class="bi bi-arrow-left-circle"></i></a>Layu Fusarium</h2>
+      <h2><a href="dashboard.html" class="back-link mb-3 d-inline-block"><i class="bi bi-arrow-left-circle"></i></a>Layu Fusarium</h2>
       <img src="assets/fusarium.jpg" alt="Layu Fusarium" class="img-fluid w-100">
 
       <p><strong>Deskripsi:</strong><br>
