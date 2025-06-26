@@ -6,7 +6,7 @@ $password = $_POST['password'] ?? '';
 
 // Validasi dasar
 if ($username == '' || $password == '') {
-  echo "<script>alert('Username dan password tidak boleh kosong'); window.location='register.php';</script>";
+  echo "<script>alert('Username dan password tidak boleh kosong'); window.location='register.html';</script>";
   exit();
 }
 
@@ -17,7 +17,7 @@ $cek->execute();
 $cek->store_result();
 
 if ($cek->num_rows > 0) {
-  echo "<script>alert('Username sudah terdaftar. Silakan gunakan username lain.'); window.location='register.php';</script>";
+  echo "<script>alert('Username sudah terdaftar. Silakan gunakan username lain.'); window.location='register.html';</script>";
 } else {
   // Simpan user baru
   $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -25,6 +25,6 @@ if ($cek->num_rows > 0) {
   $stmt->bind_param("ss", $username, $hash);
   $stmt->execute();
 
-  echo "<script>alert('Registrasi berhasil. Silakan login.'); window.location='index.php';</script>";
+  echo "<script>alert('Registrasi berhasil. Silakan login.'); window.location='index.html';</script>";
 }
 ?>
