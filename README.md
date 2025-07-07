@@ -61,15 +61,15 @@ Sistem-Pakar-Cabai/
 
 ## 🚀 How to Run Locally
 ```
-1. **Clone the repository**
+1. Clone the repository
 
 git clone https://github.com/rayhanazy/Sistem-Pakar-Cabai.git
 
-2. **Move to your XAMPP htdocs directory**
+2. Move to your XAMPP htdocs directory
 
 C:/xampp/htdocs/
 
-3. **Import the database**
+3. Import the database
 
 - Open phpMyAdmin
 
@@ -77,7 +77,7 @@ C:/xampp/htdocs/
 
 - Import the .sql file from the database/ folder
 
-4. **Run the system in your browser**
+4. Run the system in your browser
 
 http://localhost/Sistem-Pakar-Cabai/
 ```
