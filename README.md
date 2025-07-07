@@ -7,7 +7,7 @@
 This is a **web-based expert system** designed to diagnose diseases in chili plants, specifically *Fusarium Wilt*, using **Backward Chaining** and **Certainty Factor** methods.
 
 🔗 **Demo Website**:  
-[👉 View Website](https://github.com/rayhanazy/Sistem-Pakar-Cabai)
+[👉 View Website](https://rayhanazy.github.io/Sistem-Pakar-Cabai/)
 
 ---
 
