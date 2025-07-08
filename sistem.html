@@ -184,11 +184,15 @@
   <script>
     const pertanyaan = [
       { teks: "Apakah daun menguning dari bawah ke atas?", cf: 0.392, img: "assets/menguning.jpg" },
+      { teks: "Apakah terdapat bercak hitam pada daun?", cf: 0, img: "assets/bercak-hitam.jpg" },
       { teks: "Apakah tanaman layu siang hari dan segar sore hari?", cf: 0.44, img: "assets/layu.jpg" },
+      { teks: "Apakah buah membusuk saat masih muda?", cf: 0, img: "assets/penyakit-cabe-busuk.jpg" },
       { teks: "Apakah batang bagian bawah menghitam?", cf: 0.44, img: "assets/batang.jpg" },
+      { teks: "Apakah terdapat kutu putih pada batang atau daun?", cf: 0, img: "assets/kutu.jpg" },
       { teks: "Apakah akar membusuk?", cf: 0.424, img: "assets/busuk.jpg" },
+      { teks: "Apakah daun melengkung ke atas dan menguning di tepinya?", cf: 0, img: "assets/kuning.jpg" },
       { teks: "Apakah daun rontok tiba-tiba?", cf: 0.368, img: "assets/rontok.jpg" },
-      { teks: "Apakah tanaman mati perlahan?", cf: 0.416, img: "assets/mati.jpg" }
+      { teks: "Apakah tanaman mati perlahan?", cf: 0.416, img: "assets/mati.jpg" },
     ];
 
     let index = 0;
@@ -368,7 +372,7 @@
   </script>
 
   <!-- Sidebar offcanvas untuk mobile -->
-  <div class="offcanvas offcanvas-end text-bg-primary d-lg-none" tabindex="-1" id="sidebarMenu">
+  <div class="offcanvas offcanvas-end text-bg-secondary d-lg-none" tabindex="-1" id="sidebarMenu">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title">Menu Navigasi</h5>
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
