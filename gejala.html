@@ -1,160 +1,200 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <title>Gejala Penyakit Layu Fusarium</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
+    html,
     body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #eaeaea;
     }
+
+    .lottie-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
     .content-box {
       max-width: 900px;
       margin: 30px auto;
       background: #fff;
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
-    .back-link {
-      text-decoration: none;
-      color: #2c7be5;
-      font-size: 25px;
-      margin-right: 30px;
-    }
+
     h2 {
       color: #2c7be5;
       font-weight: bold;
     }
+
     .gejala-item {
       margin-bottom: 25px;
     }
+
     .gejala-item h5 {
       color: #343a40;
       font-weight: 600;
     }
+
     .offcanvas-body .nav-link:hover {
       background-color: rgba(255, 255, 255, 0.15);
       border-radius: 8px;
       padding-left: 10px;
     }
+
+    .custom-shadow {
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
+
 <body>
 
-  <!-- Navbar Utama -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="dashboard.html">Sistem Pakar Cabai</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top custom-shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center text-black" href="dashboard.html">
+        <!-- Lottie icon di kiri teks -->
+        <lottie-player src="assets\chilli.json" background="transparent" speed="1" class="lottie-icon" loop autoplay>
+        </lottie-player>
+        Sistem Pakar Cabai
+      </a>
 
-    <!-- Tombol offcanvas hanya tampil di layar kecil -->
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Tombol offcanvas hanya tampil di layar kecil -->
+      <button class="navbar-toggler d-lg-none navbar-dark" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#sidebarMenu">
+        <span class="navbar-toggler-icon navbar"></span>
+      </button>
 
-    <!-- Menu normal untuk layar besar -->
-    <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="penyakit.html"><i class="bi bi-bug"></i> Penyakit</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gejala.html"><i class="bi bi-emoji-frown"></i> Gejala</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="basis_pengetahuan.html"><i class="bi bi-book"></i> Basis Pengetahuan</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="hotline_admin.html"><i class="bi bi-telephone"></i> Hotline</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal"><i class="bi bi-box-arrow-right"></i> Logout</a>
-        </li>
-      </ul>
+      <!-- Menu normal untuk layar besar -->
+      <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-black" href="dashboard.html"><i class="bi bi-house"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="penyakit.html"><i class="bi bi-bug"></i> Penyakit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="gejala.html"><i class="bi bi-emoji-frown"></i> Gejala</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="basis_pengetahuan.html"><i class="bi bi-book"></i> Basis
+              Pengetahuan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="hotline_admin.html"><i class="bi bi-telephone"></i> Hotline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-black" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal"><i
+                class="bi bi-box-arrow-right"></i> Logout</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <div class="container">
     <div class="content-box">
 
-      <h2 class="mb-4"><a href="dashboard.html" class="back-link mb-3 d-inline-block"><i class="bi bi-arrow-left-circle"></i></a>Gejala-Gejala Layu Fusarium</h2>
+      <h2 class="text-center mb-3"><a href="dashboard.html" class="back-link mb-3 d-inline-block"></a>Gejala-Gejala Layu Fusarium</h2>
 
       <p>
-        Gejala-gejala penyakit <strong>Layu Fusarium</strong> pada tanaman cabai biasanya muncul secara bertahap dan terkadang menyerupai kekurangan air atau hama lain. Penyakit ini menyerang pembuluh xilem tanaman sehingga menghambat aliran air dan nutrisi dari akar ke seluruh bagian tanaman.
+        Gejala-gejala penyakit <strong>Layu Fusarium</strong> pada tanaman cabai biasanya muncul secara bertahap dan
+        terkadang menyerupai kekurangan air atau hama lain. Penyakit ini menyerang pembuluh xilem tanaman sehingga
+        menghambat aliran air dan nutrisi dari akar ke seluruh bagian tanaman.
         Pengenalan dini terhadap gejala sangat penting untuk menghindari penyebaran penyakit secara meluas.
       </p>
 
       <div class="gejala-item">
         <h5>1. Daun Menguning dari Bawah</h5>
-        <p>Gejala awal biasanya ditandai dengan daun bagian bawah menguning secara perlahan. Proses ini naik ke atas seiring dengan perkembangan penyakit.</p>
+        <p>Gejala awal biasanya ditandai dengan daun bagian bawah menguning secara perlahan. Proses ini naik ke atas
+          seiring dengan perkembangan penyakit.</p>
       </div>
 
       <div class="gejala-item">
         <h5>2. Tanaman Layu Siang Hari dan Segar Sore</h5>
-        <p>Tanaman tampak layu saat terik siang hari, namun kembali segar saat suhu menurun. Ini menunjukkan adanya gangguan pada sistem penyerapan air.</p>
+        <p>Tanaman tampak layu saat terik siang hari, namun kembali segar saat suhu menurun. Ini menunjukkan adanya
+          gangguan pada sistem penyerapan air.</p>
       </div>
 
       <div class="gejala-item">
         <h5>3. Batang Bagian Bawah Menghitam</h5>
-        <p>Bagian pangkal batang berubah warna menjadi cokelat tua hingga kehitaman akibat pembusukan jaringan yang disebabkan oleh infeksi jamur.</p>
+        <p>Bagian pangkal batang berubah warna menjadi cokelat tua hingga kehitaman akibat pembusukan jaringan yang
+          disebabkan oleh infeksi jamur.</p>
       </div>
 
       <div class="gejala-item">
         <h5>4. Akar Membusuk</h5>
-        <p>Akar tanaman menunjukkan kerusakan dan busuk. Warna akar menjadi gelap dan struktur akar rapuh serta mudah patah.</p>
+        <p>Akar tanaman menunjukkan kerusakan dan busuk. Warna akar menjadi gelap dan struktur akar rapuh serta mudah
+          patah.</p>
       </div>
 
       <div class="gejala-item">
         <h5>5. Daun Rontok Tiba-Tiba</h5>
-        <p>Daun yang tampak sehat dapat rontok dengan tiba-tiba. Hal ini merupakan efek lanjutan dari terganggunya pasokan nutrisi ke daun.</p>
+        <p>Daun yang tampak sehat dapat rontok dengan tiba-tiba. Hal ini merupakan efek lanjutan dari terganggunya
+          pasokan nutrisi ke daun.</p>
       </div>
 
       <div class="gejala-item">
         <h5>6. Tanaman Mati Perlahan</h5>
-        <p>Apabila tidak ditangani, tanaman akan mati secara perlahan mulai dari layu hingga mengering seluruhnya. Kerusakan sistem akar menjadi penyebab utama.</p>
+        <p>Apabila tidak ditangani, tanaman akan mati secara perlahan mulai dari layu hingga mengering seluruhnya.
+          Kerusakan sistem akar menjadi penyebab utama.</p>
       </div>
     </div>
   </div>
 
   <!-- Sidebar offcanvas untuk mobile -->
-<div class="offcanvas offcanvas-end text-bg-primary d-lg-none" tabindex="-1" id="sidebarMenu">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Menu Navigasi</h5>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  <div class="offcanvas offcanvas-end text-bg-primary d-lg-none" tabindex="-1" id="sidebarMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu Navigasi</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+      <ul class="navbar-nav text-start fs-5">
+        <li class="nav-item mb-2"><a class="nav-link text-white" href="penyakit.html"><i class="bi bi-bug me-2"></i>
+            Penyakit</a></li>
+        <li class="nav-item mb-2"><a class="nav-link text-white" href="gejala.html"><i
+              class="bi bi-emoji-frown me-2"></i> Gejala</a></li>
+        <li class="nav-item mb-2"><a class="nav-link text-white" href="basis_pengetahuan.html"><i
+              class="bi bi-book me-2"></i> Basis Pengetahuan</a></li>
+        <li class="nav-item mb-2"><a class="nav-link text-white" href="hotline_admin.html"><i
+              class="bi bi-telephone me-2"></i> Hotline</a></li>
+        <li class="nav-item mt-3"><a class="nav-link text-white fw-bold" href="#" data-bs-toggle="modal"
+            data-bs-target="#logoutModal"><i class="bi bi-box-arrow-right me-2"></i> Logout</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="offcanvas-body p-4">
-    <ul class="navbar-nav text-start fs-5">
-      <li class="nav-item mb-2"><a class="nav-link text-white" href="penyakit.html"><i class="bi bi-bug me-2"></i> Penyakit</a></li>
-      <li class="nav-item mb-2"><a class="nav-link text-white" href="gejala.html"><i class="bi bi-emoji-frown me-2"></i> Gejala</a></li>
-      <li class="nav-item mb-2"><a class="nav-link text-white" href="basis_pengetahuan.html"><i class="bi bi-book me-2"></i> Basis Pengetahuan</a></li>
-      <li class="nav-item mb-2"><a class="nav-link text-white" href="hotline_admin.html"><i class="bi bi-telephone me-2"></i> Hotline</a></li>
-      <li class="nav-item mt-3"><a class="nav-link text-white fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal"><i class="bi bi-box-arrow-right me-2"></i> Logout</a></li>
-    </ul>
-  </div>
-</div>
 
-<!-- Modal Konfirmasi Logout -->
-<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content border-0">
-      <div class="modal-header bg-warning text-dark">
-        <h5 class="modal-title" id="logoutModalLabel">Konfirmasi Logout</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
-      </div>
-      <div class="modal-body text-center">
-        <p>Apakah Anda yakin ingin keluar dari sistem?</p>
-      </div>
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <a href="index.html" class="btn btn-danger">Logout</a>
+  <!-- Modal Konfirmasi Logout -->
+  <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-warning text-dark">
+          <h5 class="modal-title" id="logoutModalLabel">Konfirmasi Logout</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Apakah Anda yakin ingin keluar dari sistem?</p>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          <a href="index.html" class="btn btn-danger">Logout</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
