@@ -94,19 +94,16 @@
 
             data.jawaban.forEach((jawab, i) => {
                 const li = document.createElement("li");
-                li.className = "list-group-item d-flex  align-items-start";
+                li.className = "list-group-item";
 
-                const pertanyaanEl = document.createElement("span");
-                pertanyaanEl.textContent = `${i + 1}. ${pertanyaan[i].teks}`;
+                const warnaBadge = jawab.toLowerCase() === "ya" ? "bg-danger" : "bg-success";
 
-                const badge = document.createElement("span");
-                badge.textContent = jawab;
-                badge.className = `badge rounded-pill ${jawab.toLowerCase() === "ya" ? 'bg-danger' : 'bg-success'}`;
-
-                li.appendChild(pertanyaanEl);
-                li.appendChild(badge);
+                li.innerHTML = `
+                ${i + 1}. ${pertanyaan[i].teks}
+                 <span class="badge ${warnaBadge} rounded-pill ms-3">${jawab}</span>`;
                 list.appendChild(li);
             });
+
 
 
             // Chart Pie
