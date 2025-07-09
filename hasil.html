@@ -80,10 +80,9 @@
             { teks: "Apakah daun menguning dan mengeriting?" },
             { teks: "Apakah batang bagian bawah menghitam?" },
             { teks: "Apakah akar membusuk?" },
-            { teks: "Apakah terdapat bercak kebasah-basahan pada bagian buah atau tepian daun?" },
             { teks: "Apakah daun menggulung dan tulang daun berwarna kuning pekat?" },
             { teks: "Apakah daun rontok tiba-tiba?" },
-            { teks: "Apakah tanaman mati perlahan?" },
+            { teks: "Apakah tanaman mati perlahan?" }
         ];
 
         const data = JSON.parse(localStorage.getItem("hasilDiagnosa"));
@@ -95,10 +94,20 @@
 
             data.jawaban.forEach((jawab, i) => {
                 const li = document.createElement("li");
-                li.className = "list-group-item";
-                li.textContent = `${i + 1}. ${pertanyaan[i].teks} — ${jawab}`;
+                li.className = "list-group-item d-flex  align-items-start";
+
+                const pertanyaanEl = document.createElement("span");
+                pertanyaanEl.textContent = `${i + 1}. ${pertanyaan[i].teks}`;
+
+                const badge = document.createElement("span");
+                badge.textContent = jawab;
+                badge.className = `badge rounded-pill ${jawab.toLowerCase() === "ya" ? 'bg-danger' : 'bg-success'}`;
+
+                li.appendChild(pertanyaanEl);
+                li.appendChild(badge);
                 list.appendChild(li);
             });
+
 
             // Chart Pie
             const positif = data.kesimpulan.includes("Kemungkinan besar");
